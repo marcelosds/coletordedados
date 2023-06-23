@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView04"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="horizontal"
+    tools:context=".MainActivity4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="0dp"
+            android:text="Importação de Inventário:"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <CheckBox
+            android:id="@+id/chk_main4_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="0dp"
+            android:text="Habilita Importação (Iniciar Inventário)"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:text='Para realizar a importação tenha certeza de que o arquivo "bens.db" está na pasta /Download do armazenamento interno do seu dispositivo.'
+            android:textAlignment="center"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="90dp"
+            android:layout_height="107dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            app:srcCompat="@drawable/img_importar" />
+
+        <Button
+            android:id="@+id/btnImportar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="Importar"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="0dp"
+            android:text="Exportação do Resultado:"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <CheckBox
+            android:id="@+id/chk_main4_2"
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:text="Habilita Exportação (Finaliza Inventário)"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="298dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="0dp"
+            android:text='Ao realizar a exportação do resultado do inventário, será criado na pasta /Download do armazenamento interno do dispositivo um arquivo chamado "bens.db", este deverá ser importado em sua solução de gestão patrimonial.'
+            android:textAlignment="center"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="90dp"
+            android:layout_height="137dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            app:srcCompat="@drawable/img_exportar" />
+
+        <Button
+            android:id="@+id/btnExporta"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:enabled="false"
+            android:text="Exportar"
+            android:textSize="11sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+

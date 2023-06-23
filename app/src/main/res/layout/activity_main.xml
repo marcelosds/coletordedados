@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="Coletor de Dados Patrimoniais"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="370dp"
+            android:layout_height="320dp"
+            app:srcCompat="@drawable/logo_marca1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnInventario"
+                android:layout_width="154dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:text="Inventário"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/btnConfig"
+                android:layout_width="161dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:text="Configurações"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Informações do Desenvolvedor"
+            android:textColor="#2196F3"
+            android:textColorHighlight="#F8F3F3"
+            android:textColorLink="#F3E8E8"
+            android:textSize="10sp"
+            android:textStyle="italic"
+            app:backgroundTint="#FFFFFF" />
+
+
+    </LinearLayout>
+
+</ScrollView>

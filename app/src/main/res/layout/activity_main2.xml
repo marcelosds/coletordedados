@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView02"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="horizontal"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/txtResultado"
+                style="@style/Widget.AppCompat.AutoCompleteTextView"
+                android:layout_width="144dp"
+                android:layout_height="54dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="0dp"
+                android:editable="true"
+                android:ems="10"
+                android:focusable="true"
+                android:hint="Digite Nº da Placa"
+                android:imeOptions="actionSearch"
+                android:inputType="textCapCharacters"
+                android:textAlignment="center"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnConsulta"
+                android:layout_width="63dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="0dp"
+                app:icon="@android:drawable/ic_menu_search"
+                app:iconSize="35sp"
+                app:iconTint="#040404" />
+
+            <Button
+                android:id="@+id/btnScan"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="0dp"
+                android:gravity="center_horizontal|center_vertical"
+                app:icon="@drawable/ic_barcode_icon_178591"
+                app:iconPadding="8dp"
+                app:iconSize="30sp"
+                app:iconTint="#070707" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="0dp"
+                android:text="Placa:"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtPlaca"
+                android:layout_width="105dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="0dp"
+                android:clickable="false"
+                android:editable="false"
+                android:ems="10"
+                android:enabled="false"
+                android:textAlignment="center"
+                android:textColor="#009688"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="25dp"
+                android:gravity="fill_vertical"
+                android:text="Inventariado:"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/txtData"
+                android:layout_width="102dp"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="date"
+                android:textAlignment="center"
+                android:textColor="#009688"
+                android:textSize="11sp"
+                android:textStyle="italic" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="7dp"
+                android:text="Descrição:"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/txtDescricao"
+                android:layout_width="361dp"
+                android:layout_height="63dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:clickable="false"
+                android:editable="false"
+                android:ems="10"
+                android:enabled="false"
+                android:gravity="top|left"
+                android:textColor="#009688"
+                android:textIsSelectable="false"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="7dp"
+                android:text="Localização:"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtLocalizacao"
+                android:layout_width="247dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:clickable="false"
+                android:editable="false"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textPersonName"
+                android:textColor="#009688"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="7dp"
+                android:text="Estado:"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtEstado"
+                android:layout_width="288dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:clickable="false"
+                android:editable="false"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textPersonName"
+                android:textColor="#009688"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="7dp"
+                android:text="Situação:"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtSituacao"
+                android:layout_width="287dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:clickable="false"
+                android:editable="false"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textPersonName"
+                android:textColor="#009688"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/chkAlterar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:checked="false"
+                android:clickable="false"
+                android:editable="true"
+                android:text="Alterar Dados?"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/chkLocal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:text="Novo Local:"
+                android:textColor="#5E5E5E"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <Spinner
+                android:id="@+id/spLocalizacao"
+                android:layout_width="224dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:clickable="false"
+                android:textAlignment="gravity"
+                android:visibility="invisible" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/chkEstado"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:text="Novo Estado:"
+                android:textColor="#5E5E5E"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <Spinner
+                android:id="@+id/spConservacao"
+                android:layout_width="211dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:clickable="false"
+                android:textAlignment="gravity"
+                android:visibility="invisible" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/chkSituacao"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:text="Nova Situação:"
+                android:textColor="#5E5E5E"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <Spinner
+                android:id="@+id/spSituacao"
+                android:layout_width="196dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:clickable="false"
+                android:textAlignment="gravity"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnLista"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:enabled="true"
+                android:text="Lista"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/btnLimpa"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Limpar"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/btnGrava"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:enabled="false"
+                android:text="Gravar"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/txtCDsituacao"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="50dp"
+                android:text="TextView"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/txtCDestado"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TextView"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/txtCDlocal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TextView"
+                android:visibility="invisible" />
+
+            <ListView
+                android:id="@+id/lvItens"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
